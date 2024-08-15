@@ -5,8 +5,10 @@
   "main": "index.js",
   "type": "module",
   "scripts": {
-    "start": "node app.js",
-    "test": "./node_modules/.bin/jest"
+    "test": "jest",
+    "test:unit": "jest __tests__/unit",
+    "test:integration": "jest __tests__/integration",
+    "start": "node server.js"
   },
   "author": "Patrik Nygren",
   "license": "ISC",
