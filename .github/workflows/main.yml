@@ -1,0 +1,24 @@
+name: Continuous Integration of node_calculator
+
+on:
+  push:
+    branches: ["main"]
+  workflow_dispatch:
+
+jobs:
+  unit:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: install dependencies
+        run: npm install
+      - name: unit test
+        run: npm run test:unit
+  integration:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: install dependencies
+        run: npm install
+      - name: integration test
+        run: npm run test:integration
