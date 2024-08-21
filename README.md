@@ -1,18 +1,18 @@
 # node_calculator:
-För att köra applikationen:
+To run the application:
 npm start
 
-Projektet använder flera testverktyg som Jest, babel-jest, och @babel/preset-env. Här är en beskrivning av de testscripten:
+The project uses several testing tools such as Jest, babel-jest, and @babel/preset-env. Here is a description of those test scripts:
 
-För att köra alla tester:
+To run all tests:
 npm test
-För att köra enhetstester:
+To run unit tests:
 npm run test:unit
-För att köra integrationstester:
+To run integration tests:
 npm run test:integration
 
 
-Projektet använder följande beroenden:
+The project uses the following dependencies:
 @babel/preset-env: ^7.24.3"
 babel-jest: "^29.7.0",
 jest: "^29.7.0",
